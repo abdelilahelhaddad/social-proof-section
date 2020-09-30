@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+:root {
+  --primary-color: hsl(300, 43%, 22%);
+  --secondary-color: hsl(333, 80%, 67%);
+  --light-p-color: hsl(303, 10%, 53%);
+  --gray-color: hsl(300, 24%, 96%);
+  --white-color: hsl(0, 0%, 100%);
+  --max-width: 1440px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background: url(images/bg-pattern-bottom-desktop.svg) no-repeat right bottom, url(images/bg-pattern-top-desktop.svg) no-repeat left top;
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: var(--max-width);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5% 5% 1% 5%;
+}
+
+header .container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: var(--max-width);
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 0 5%;
+}
+
+.users {
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: left;
+  margin-right: 90px;
+  padding-bottom: 10px;
+}
+
+.text-content {
+  text-align: left;
+  margin-right: 90px;
+  color: var(--light-p-color);
+}
+
+.rating {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--gray-color);
+  color: var(--primary-color);
+  width: 80%;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.snd {
+  margin-left: 4rem;
+}
+
+.thd {
+  margin-left: 7rem;
+}
+
+.star {
+  padding-right: 25px;
+}
+
+.star img {
+  padding-right: 5px;
+}
+
+.star img:first-child {
+  padding-left: 15px;
+}
+
+.card {
+  background: var(--primary-color);
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 40px 40px;
+  color: var(--white-color);
+}
+
+.card:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.card:last-child {
+  margin-top: 4rem;
+}
+
+.card-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.card-head {
+  display: flex;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.card-head div {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.card-head h3:last-child {
+  color: var(--secondary-color);
+  padding-left: 5px;
+}
+
+.card-head h3,
+.card-content {
+  font-size: 14px;
+}
